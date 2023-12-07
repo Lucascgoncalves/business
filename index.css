@@ -1,0 +1,168 @@
+html, body{
+    height: 100%;
+}
+#navbar{
+    padding: 0;
+    border: 1px solid rgb(255, 255, 255);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background-color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+#img-fluid {
+    animation: jumpingInfinity 0.5s infinite alternate;
+}
+
+@keyframes jumpingInfinity {
+    to {
+        transform: translateY(-5px);
+    }
+}
+
+
+
+#btn_nav{
+    background-color: #1DC465;
+    border-radius: 20px;
+}
+#btn_nav:hover{
+    background-color: #19f378;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-image: url(assets/backgound.jpg);
+    background-color: #141E2B;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.50; /* Ajuste o valor conforme necessário (0 = transparente, 1 = opaco) */
+    z-index: -1; /* Certifique-se de que o pseudo-elemento está atrás do conteúdo principal */
+}
+
+body {
+    color: white;
+    /* Restante do seu estilo aqui */
+    background-color: #141E2B;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#menu_btn{
+    border: 1px solid white;
+    background-color: aliceblue;
+}
+
+#container_central{
+    display: flex;
+    height: auto;
+    margin-top: 5rem;
+    max-width: 95vw;
+    gap: 15px;
+}
+#nav_link:hover{
+    border-bottom: 1.5px solid #1DC465;
+    border-bottom-right-radius: 10px;
+}
+#frase1{
+    background-color: #1DC465;
+    width: auto;
+    max-width: max-content;
+    color: black;
+    font-weight: bold;
+    font-family:monospace;
+    font-size: 20px;
+    padding: 10px;
+    padding-left: 5px;
+    padding-right: 10px;
+    border-radius: 10px;
+}
+#h1_sistema{
+    font-size:50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#span_sistema, #login{ 
+    color: #1DC465;
+}
+#container1{
+    max-width: 60%;
+}
+#container1_p{
+    text-align: justify;
+}
+#btn_group{
+
+    width: auto;
+    gap: 50px;
+}
+#container2 {
+    position: relative;
+    height: auto;
+    text-align: center;
+
+}
+
+#container2::before {
+    border-radius: 20px;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #A6A6A6;
+    opacity: 0.5;
+    z-index: -1; /* Certifique-se de que o pseudo-elemento está atrás do conteúdo principal */
+}
+
+/* Restante do estilo para o conteúdo dentro da div */
+
+#btn_form{
+    width: 80%;
+    background-color: #141E2B;
+    border-radius: 15px;
+}
+#flexCheckDefault{
+    background-color: #141E2B;
+    border-color: #1DC465;
+}
+#inputs_login{
+    background-color: #141E2B;
+    color: white;
+}
+#inputs_login::placeholder{
+    color: rgb(160, 160, 160);
+}
+
+@media screen and (max-width:768px){
+    
+    #container_central{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 3rem;
+    }
+    #container1{
+        max-width: 95vw;
+        width:auto;
+    }
+    #container2{
+        max-width: 95vw;
+    }
+    #btn_group{
+        width: auto;
+        gap: 50px;
+    }
+    #div_rodape{
+        flex-direction: column;
+    }
+    footer{
+        gap: 1rem;
+    }
+}
