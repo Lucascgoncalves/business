@@ -19,11 +19,10 @@ body{
     border-top: none;
     border-left: none;
     border-right: none;
-    background-color: rgb(0, 0, 0);
-    font-weight: bold;
+    background-color: transparent;
 }
 #img-fluid {
-    animation: jumpingInfinity 0.5s infinite alternate;
+    animation: jumpingInfinity 1s infinite alternate;
 }
 
 @keyframes jumpingInfinity {
@@ -58,6 +57,12 @@ body{
     flex-direction: column;
     padding: 10px;
 }
+
+#h1_principal{
+    color: red;
+    margin-left: 1.6rem;
+}
+
 #container_left{
    max-width: 100vw;
 }
@@ -151,11 +156,10 @@ body{
     cursor: pointer;
 }
 #arrow_more{
-    font-size: 50px;
+    font-size: 30px;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     cursor: pointer;
-    border: 1px solid #1DC465;
-    border-radius: 100px;
+    color: #1DC465;
 }
 @media screen and (min-width:320px) and (max-width:767px){
     #container1{
