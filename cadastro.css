@@ -1,0 +1,95 @@
+html, body{
+    height: 100%;
+}
+#navbar{
+    padding: 0;
+    border: 1px solid rgb(255, 255, 255);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background-color: transparent;
+}
+
+#img-fluid, #ico_whatsapp{
+    animation: jumpingInfinity 1s infinite alternate;
+}
+
+@keyframes jumpingInfinity {
+    to {
+        transform: translateY(-5px);
+    }
+}
+body::before {
+    content: "";
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-image: url(assets/backg_cadastro.jfif);
+    background-color: #141E2B;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.10; 
+    z-index: -1; 
+}
+body {
+    color: white;
+  
+    background-color: #141E2B;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#profile{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+}
+#profile:hover, #nav_link:hover{
+    border-bottom: 1px solid #1DC465;
+    border-bottom-right-radius: 10px;
+}
+#image_div {
+    border-radius: 50%;
+    overflow: hidden;
+}
+#strong, #arrow{
+    color: #1DC465;
+}
+#photo{
+    width: 50px;
+}
+#btn_nav{
+    background-color: #1DC465;
+    border-radius: 20px;
+}
+#btn_nav:hover{
+    background-color: #19f378;
+}
+#container_principal{
+    display: flex;
+    align-items: center;
+}
+#container_left{
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#btn_message{
+    background-color: #FFEA94;
+    border-radius: 15px;
+}
+#btn_message i{
+    margin-left: 1rem;
+}
+#container_right form{
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    max-height: max-content;
+}
